@@ -1,0 +1,24 @@
+# Public summary of the 30M-parameter comparison.
+# This file records the controlled variables used for the reported result;
+# it is not a drop-in training command because the upstream GDN2 kernels are
+# intentionally not vendored in this repository.
+experiment: gdn2-flat-vs-transformer-30m
+dataset:
+  train_tokens: 100000000
+  sequence_length: 2048
+  split: repository-disjoint
+  fim_rate: 0.5
+training:
+  effective_batch: "32 x 4"
+  schedule: warmup-cosine
+  seeds: [1337, 1338, 1339]
+models:
+  gdn2_flat:
+    unique_parameters: 29920000
+    effective_depth: 4
+  transformer:
+    unique_parameters: 32510000
+    effective_depth: 5
+hardware:
+  device: NVIDIA GB10 Blackwell
+  host_class: DGX Spark

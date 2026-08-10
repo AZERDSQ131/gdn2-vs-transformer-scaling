@@ -1,0 +1,22 @@
+# Public summary of the approximately 120M-parameter comparison.
+# The result is provisional: only seed 1337 is currently available.
+experiment: gdn2-flat-vs-transformer-120m
+dataset:
+  train_tokens: 400000000
+  sequence_length: 2048
+  split: repository-disjoint
+  fim_rate: 0.5
+training:
+  effective_batch: "32 x 4"
+  schedule: warmup-cosine
+  seeds: [1337]
+models:
+  gdn2_flat:
+    unique_parameters: 108380000
+    effective_depth: 8
+  transformer:
+    unique_parameters: 125720000
+    effective_depth: 10
+hardware:
+  device: NVIDIA GB10 Blackwell
+  host_class: DGX Spark

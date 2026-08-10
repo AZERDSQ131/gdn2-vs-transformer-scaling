@@ -1,0 +1,9 @@
+experiment,seed,model,parameters,train_tokens,val_loss,perplexity,flops_per_token_m,tokens_per_second,memory_peak_gb,status
+30m,1337,gdn2_flat,29920000,100000000,4.4504,85.7,78.8,57251,39.2,confirmed
+30m,1338,gdn2_flat,29920000,100000000,4.4238,,78.8,,,confirmed
+30m,1339,gdn2_flat,29920000,100000000,4.3971,,78.8,,,confirmed
+30m,1337,transformer,32510000,100000000,4.5901,98.5,157.3,68217,36.5,confirmed
+30m,1338,transformer,32510000,100000000,4.5955,,157.3,,,confirmed
+30m,1339,transformer,32510000,100000000,4.5788,,157.3,,,confirmed
+120m,1337,gdn2_flat,108380000,400000000,2.1790,8.84,474.1,20390,71.8,provisional
+120m,1337,transformer,125720000,400000000,1.9330,6.91,798.3,25540,62.8,provisional

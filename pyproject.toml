@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdn2-scaling-kit"
+version = "0.1.0"
+description = "Public analysis and reproduction kit for the GDN2 vs Transformer scaling experiment"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Substrate Research" }]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

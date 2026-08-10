@@ -1,0 +1,4 @@
+experiment,seed,model,parameters,train_tokens,val_loss,relative_flops,status
+recurrent-depth,1337,gdn2_x1,29920000,29000000,5.594,1.0,diagnostic
+recurrent-depth,1337,gdn2_x2,29920000,29000000,5.628,2.0,diagnostic
+recurrent-depth,1337,gdn2_x3,29920000,29000000,5.681,3.0,diagnostic
