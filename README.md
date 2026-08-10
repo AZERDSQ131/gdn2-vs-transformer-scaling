@@ -1,8 +1,11 @@
 # GDN2 vs Transformer: scaling-regime reproduction kit
 
-This repository accompanies the Substrate Research article:
+This repository accompanies the Substrate Research article **“GDN2 gagne
+petit. Un premier run suggère une inversion à l’échelle.”** The article is
+served by the companion Substrate site; the public artifact and its evidence
+are collected here so that the reproduction boundary remains explicit.
 
-**[GDN2 gagne petit. Un premier run suggère une inversion à l’échelle.](https://github.com/AZERDSQ131/G-serie/blob/main/site/articles/gdn2-vs-transformer.html)**
+Article slug: `gdn2-vs-transformer.html`.
 
 It contains the public, non-sensitive part of the experiment comparing a flat
 Gated DeltaNet-2 model with a dense Transformer at two scales:
